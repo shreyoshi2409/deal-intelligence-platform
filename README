@@ -1,58 +1,62 @@
-# Deal Intelligence Dashboard
+Deal Intelligence Dashboard
+Overview
 
-## Overview
-The **Deal Intelligence Dashboard** is an AI-powered tool designed to help sales teams make smarter decisions by analyzing deals in real-time.  
+The Deal Intelligence Dashboard is an AI-powered tool that helps sales teams make smarter decisions by analyzing deals in real time.
 
-It extends beyond traditional CRM systems by generating follow-up emails, assessing deal risk, and providing actionable insights to improve deal outcomes.
+It enhances traditional CRM systems by generating follow-up emails, assessing deal risk, and providing actionable insights.
 
-### Key Capabilities
-- AI-generated personalized follow-up emails  
-- Risk scoring and win probability calculation  
-- Deal decay detection  
-- Explainable reasoning for risk assessment  
-- Strategic recommendations  
-- Session-level analytics  
+Key Capabilities
+AI-generated personalized follow-up emails
 
----
+Risk scoring and win probability
 
-## Features
+Deal decay detection
 
-### 1. Deal Decay Detection
-- Identifies deals that have not been contacted for an extended period.  
-- Considers client sentiment (neutral/negative) to flag potential decay.  
-- Displays warnings for deals entering a decay phase.  
+Explainable reasoning
 
----
+Strategic recommendations
 
-### 2. Win Probability
-- Calculates win probability using the formula:  
-  ```
-  win_probability = 100 - risk_score
-  ```
-- Provides a clear indicator of deal health and momentum.  
+Session-level analytics
 
----
+Features
+Deal Decay Detection
 
-### 3. Explainability Layer
-- Offers transparent reasoning behind risk scores.  
-- Considers key factors such as:
-  - Last contact activity  
-  - Client sentiment  
-  - Deal value  
+Flags deals with no recent contact and neutral/negative sentiment
 
----
+Warns when deals enter a decay phase
 
-### 4. Strategic Recommendations
-- Suggests next steps based on deal risk and momentum:
-  - **High risk** → Escalate internally or schedule urgent follow-up  
-  - **Medium risk** → Send personalized follow-up  
-  - **High win probability** → Maintain momentum and consider closing  
+Win Probability
 
----
+Formula: win_probability = 100 - risk_score
 
-### 5. Session-Level Analytics
-- Tracks deal activity within a session.  
-- Provides insights such as:
-  - Number of deals analyzed  
-  - Number of high-risk deals  
-- Helps understand overall deal trends.
+Indicates deal momentum
+
+Explainability Layer
+
+Explains risk based on:
+Last contact
+
+Client sentiment
+
+Deal value
+
+Strategic Recommendations
+High risk → urgent follow-up or escalation
+
+Medium risk → personalized follow-up
+
+High win probability → focus on closing
+
+Session-Level Analytics
+Tracks deals analyzed
+
+Highlights high-risk deals
+
+Shows overall trends
+
+Demo Scenarios
+High Risk / Decay – Zoho CRM Africa Partner Integration
+
+Low Risk / Momentum – Zoho CRM Startup Accelerator Program
+
+Medium Risk – Zoho ERP India SME Expansion
