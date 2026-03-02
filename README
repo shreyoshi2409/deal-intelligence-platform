@@ -1,0 +1,62 @@
+Deal Intelligence Dashboard
+Overview
+
+The Deal Intelligence Dashboard is an AI-powered tool that helps sales teams make smarter decisions by analyzing deals in real time.
+
+It enhances traditional CRM systems by generating follow-up emails, assessing deal risk, and providing actionable insights.
+
+Key Capabilities
+AI-generated personalized follow-up emails
+
+Risk scoring and win probability
+
+Deal decay detection
+
+Explainable reasoning
+
+Strategic recommendations
+
+Session-level analytics
+
+Features
+Deal Decay Detection
+
+Flags deals with no recent contact and neutral/negative sentiment
+
+Warns when deals enter a decay phase
+
+Win Probability
+
+Formula: win_probability = 100 - risk_score
+
+Indicates deal momentum
+
+Explainability Layer
+
+Explains risk based on:
+Last contact
+
+Client sentiment
+
+Deal value
+
+Strategic Recommendations
+High risk → urgent follow-up or escalation
+
+Medium risk → personalized follow-up
+
+High win probability → focus on closing
+
+Session-Level Analytics
+Tracks deals analyzed
+
+Highlights high-risk deals
+
+Shows overall trends
+
+Demo Scenarios
+High Risk / Decay – Zoho CRM Africa Partner Integration
+
+Low Risk / Momentum – Zoho CRM Startup Accelerator Program
+
+Medium Risk – Zoho ERP India SME Expansion
