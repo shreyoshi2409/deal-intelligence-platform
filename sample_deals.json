@@ -1,0 +1,10 @@
+[
+  {
+    "deal_id": 101,
+    "stage": "Negotiation",
+    "last_email": "Hi John, sharing the proposal document. Let me know your thoughts.",
+    "days_since_contact": 7,
+    "deal_value": 200000,
+    "industry": "SaaS"
+  }
+]

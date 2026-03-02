@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deal Intelligence Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        h2, h3 {
+            color: #1e3a8a;
+        }
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            border-left: 4px solid #1e3a8a;
+            background-color: #f0f4ff;
+            border-radius: 6px;
+            position: relative;
+        }
+        .warning {
+            color: #b91c1c;
+            font-weight: 700;
+            font-size: 1.05em;
+            animation: flash 1s infinite alternate;
+        }
+        @keyframes flash {
+            0% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+        .high-risk {
+            border-left-color: #b91c1c !important;
+            background-color: #ffe5e5 !important;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #1e3a8a;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3b5edb;
+        }
+        pre {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Deal Intelligence Dashboard</h2>
+        <form method="POST">
+            <label>Deal Name</label>
+            <input type="text" name="deal_name" required>
+
+            <label>Deal Value</label>
+            <input type="number" name="deal_value" required>
+
+            <label>Last Contact (days ago)</label>
+            <input type="number" name="last_contact" required>
+
+            <label>Client Sentiment</label>
+            <select name="sentiment" required>
+                <option value="positive">Positive</option>
+                <option value="neutral">Neutral</option>
+                <option value="negative">Negative</option>
+            </select>
+
+            <label>Notes</label>
+            <textarea name="notes" rows="3"></textarea>
+
+            <label>Tone</label>
+            <select name="tone" required>
+                <option value="formal">Formal</option>
+                <option value="friendly">Friendly</option>
+            </select>
+
+            <button type="submit">Analyze Deal</button>
+        </form>
+
+        {% if email %}
+            <div class="section">
+                <h3>📧 Suggested Email</h3>
+                <pre>{{ email }}</pre>
+            </div>
+
+            <div class="section {% if risk_score >= 70 %}high-risk{% endif %}">
+                <h3>📊 Deal Intelligence</h3>
+                <p><strong>Risk Score:</strong> {{ risk_score }}%</p>
+                <p><strong>Win Probability:</strong> {{ win_probability }}%</p>
+
+                {% if decay_warning %}
+                    <p class="warning">{{ decay_warning }}</p>
+                {% endif %}
+
+                <p><strong>Why this score?</strong> {{ explanation }}</p>
+                <p><strong>Recommended Strategy:</strong> {{ strategy }}</p>
+            </div>
+
+            <div class="section">
+                <h3>📈 Session Overview</h3>
+                <p>Deals Analyzed: {{ deal_counter }}</p>
+                <p>High Risk Deals: {{ high_risk_count }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        // Optional: flash decay warning only once, fade after 5s
+        const warningEl = document.querySelector('.warning');
+        if (warningEl) {
+            setTimeout(() => {
+                warningEl.style.transition = 'opacity 1s';
+                warningEl.style.opacity = 0;
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
