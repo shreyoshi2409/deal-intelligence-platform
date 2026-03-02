@@ -1,0 +1,58 @@
+# Deal Intelligence Dashboard
+
+## Overview
+The **Deal Intelligence Dashboard** is an AI-powered tool designed to help sales teams make smarter decisions by analyzing deals in real-time.  
+
+It extends beyond traditional CRM systems by generating follow-up emails, assessing deal risk, and providing actionable insights to improve deal outcomes.
+
+### Key Capabilities
+- AI-generated personalized follow-up emails  
+- Risk scoring and win probability calculation  
+- Deal decay detection  
+- Explainable reasoning for risk assessment  
+- Strategic recommendations  
+- Session-level analytics  
+
+---
+
+## Features
+
+### 1. Deal Decay Detection
+- Identifies deals that have not been contacted for an extended period.  
+- Considers client sentiment (neutral/negative) to flag potential decay.  
+- Displays warnings for deals entering a decay phase.  
+
+---
+
+### 2. Win Probability
+- Calculates win probability using the formula:  
+  ```
+  win_probability = 100 - risk_score
+  ```
+- Provides a clear indicator of deal health and momentum.  
+
+---
+
+### 3. Explainability Layer
+- Offers transparent reasoning behind risk scores.  
+- Considers key factors such as:
+  - Last contact activity  
+  - Client sentiment  
+  - Deal value  
+
+---
+
+### 4. Strategic Recommendations
+- Suggests next steps based on deal risk and momentum:
+  - **High risk** → Escalate internally or schedule urgent follow-up  
+  - **Medium risk** → Send personalized follow-up  
+  - **High win probability** → Maintain momentum and consider closing  
+
+---
+
+### 5. Session-Level Analytics
+- Tracks deal activity within a session.  
+- Provides insights such as:
+  - Number of deals analyzed  
+  - Number of high-risk deals  
+- Helps understand overall deal trends.
