@@ -123,3 +123,8 @@ pip install -r requirements.txt
 
    Generated outputs, such as cleaned datasets and plots, are saved in designated output directories or displayed within the notebook interface for further review and interpretation.
 
+## 🌐 Live Demo
+
+🔗 [https://deal-intelligence.onrender.com](https://deal-intelligence.onrender.com/)
+
+⚠️ Note: Hosted on free tier. First request may take 30–60 seconds due to cold start.
