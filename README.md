@@ -1,5 +1,9 @@
 # Deal Intelligence
 
+## 🌐 Live Demo
+
+🔗[https://deal-intelligence-platform.vercel.app/]
+
 ## Intro
 
 Deal Intelligence is a data-driven application designed to streamline and enhance the process of deal analysis and management. The repository provides tools and scripts for data extraction, transformation, and visualization, primarily focused on financial transactions, market analytics, and risk evaluation. The project leverages Python, Jupyter Notebooks, and a suite of data science libraries to deliver actionable insights from raw deal data.
@@ -123,8 +127,5 @@ pip install -r requirements.txt
 
    Generated outputs, such as cleaned datasets and plots, are saved in designated output directories or displayed within the notebook interface for further review and interpretation.
 
-## 🌐 Live Demo
 
-🔗 [https://deal-intelligence.onrender.com](https://deal-intelligence.onrender.com/)
 
-⚠️ Note: Hosted on free tier. First request may take 30–60 seconds due to cold start.
