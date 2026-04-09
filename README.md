@@ -1,8 +1,6 @@
 # Deal Intelligence
 
-## 🌐 Live Demo
-
-🔗[Live-Demo-Link-deal-intelligence-platform.vercel.app](https://deal-intelligence-platform.vercel.app/)
+🌐 **Live Demo:** [deal-intelligence-platform.vercel.app](https://deal-intelligence-platform.vercel.app/)
 
 ## Intro
 
