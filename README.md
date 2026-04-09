@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-🔗[https://deal-intelligence-platform.vercel.app/]
+🔗[Live Demo Link](https://deal-intelligence-platform.vercel.app/)
 
 ## Intro
 
